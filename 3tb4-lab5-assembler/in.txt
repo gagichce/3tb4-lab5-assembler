@@ -1,0 +1,23 @@
+﻿#Test Assembly Program
+
+#Assembly 1
+CLR R0
+CLR R1
+ADDI R1, 2
+SUBI R1, 3
+MOV R0, R1
+
+#Assembly 2
+CLR R1
+CLR R2 #DEBATABLE
+SR0 3
+MOV R1, R2
+ADDI R2, 2
+ADDI R2, 1
+CLR R1
+ADDI R1, 3
+MOVRHS R1
+SUBI R2, 4
+BR 3
+
+PAUSE
