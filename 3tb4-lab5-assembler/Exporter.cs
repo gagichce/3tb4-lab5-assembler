@@ -26,7 +26,7 @@ namespace _3tb4_lab5_assembler
         }
 
         private string _head =
-@"-- Copyright (C) 1991-2013 Altera Corporation
+            @"-- Copyright (C) 1991-2013 Altera Corporation
 -- Your use of Altera Corporation's design tools, logic functions 
 -- and other software and tools, and its AMPP partner logic 
 -- functions, and any output files from any of the foregoing 
@@ -53,7 +53,7 @@ CONTENT BEGIN
 ";
 
         private string _tail =
-@"
+            @"
 END;
 ";
 

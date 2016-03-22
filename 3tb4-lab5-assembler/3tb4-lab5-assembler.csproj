@@ -52,13 +52,17 @@
     <Compile Include="Instructions\MOVX.cs" />
     <Compile Include="Instructions\PAUSE.cs" />
     <Compile Include="Instructions\SRX.cs" />
-    <Compile Include="MifExporter.cs" />
+    <Compile Include="VHDLMockExporter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.cs" />
+    <Compile Include="Exporter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="in.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="addi.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
