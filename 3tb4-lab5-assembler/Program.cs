@@ -28,18 +28,21 @@ namespace _3tb4_lab5_assembler
                 //export the bytes to the .mif file
 
                 var exporter = new MifExporter();
-                var otherExporter = new VHDLMockExporter();
+                var vhdlexporter = new VHDLMockExporter();
 
-                if (args.Length > 1)
+                if (args.Length > 2)
+                {
+                    vhdlexporter.Export(byteCode, args[2]);
+
+                }
+                else if (args.Length > 1)
                 {
                     exporter.Export(byteCode, args[1]);
-                    otherExporter.Export(byteCode, args[1]);
-
                 }
                 else
                 {
                     exporter.Export(byteCode);
-                    otherExporter.Export(byteCode);
+                    vhdlexporter.Export(byteCode);
                 }
 
 
